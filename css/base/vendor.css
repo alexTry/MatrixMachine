@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Segoe;
+  src: url('../../fonts/Segoe UI.ttf'); }
+
+html {
+  color: #404040;
+  font-family: Segoe;
+  font-size: 14px;
+  line-height: 20px; }

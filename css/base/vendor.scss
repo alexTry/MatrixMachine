@@ -1,0 +1,15 @@
+$colorText: #404040;
+$lineHeight: 20px;
+$fontSize: 14px;
+@font-face {
+    font-family: Segoe;
+    src: url('../../fonts/Segoe UI.ttf');
+}
+
+html{
+	color: $colorText;
+	font-family: Segoe;
+// 	font-weight: 100;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+}

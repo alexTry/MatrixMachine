@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<title>Калькулятор умножения матриц</title>
+		<!--code by newLifeJS -->
+		<link rel="stylesheet" type="text/css" href="../css/base/index.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div id="sidebar" class="col-xs-4">
+					<br>
+					<input type="button" class="btn btn-success" value="Умножение матриц" id="add" >
+					<br>
+					<br>
+					<br>
+					<br>
+					<button type="button" id="zero" class="btn btn-default" >
+						<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Очистить матрицы
+					</button><br>
+					<button  type="button" id="changeView" class="btn btn-default"> 
+						<span class="glyphicon glyphicon-sort" aria-hidden="true"></span> Поменять матрицы местами
+					</button>
+					<br>
+					<br>
+					<br>
+					<br>
+					<input type="radio" name="matrix" checked="checked" id="selA" > Матрица A
+					<input type="radio" name="matrix" id="selB"> Матрица B
+					<br>
+					<button  type="button" class="btn btn-default" id="addR">
+						<span class="glyphicon glyphicon-plus" aria-hidden="true" ></span> Добавить
+					</button>
+					<button  type="button" class="btn btn-default" id="delR">
+						<span class="glyphicon glyphicon-minus" aria-hidden="true" > </span> Удалить
+					</button> Строку
+					<br>
+					<button  type="button" class="btn btn-default" id="addC">
+						<span class="glyphicon glyphicon-plus" aria-hidden="true"> </span> Добавить
+					</button>
+					<button  type="button" class="btn btn-default" id="delC" >
+						<span class="glyphicon glyphicon-minus" aria-hidden="true"> </span> Удалить
+					</button> Столбец
+					<br>
+					<br><br>
+					<p class="error">Такие матрицы нельзя перемножить,<br/>так как количество столбцов матрицы A<br/>не равно количеству строк матрицы B.</p>
+					<p></p> 
+				</div>
+				<div id="content" class="col-xs-8">
+					
+					<div id="result" class="inline">
+						<div class="left"></div>
+						<div class="center"></div>
+						<div class="right"></div>
+					</div>
+					<div id="matrixA" class="inline">
+						<div class="left"></div>
+						<div class="center"></div>
+						<div class="right"></div>
+						<div id="letterA" >A</div>
+					</div> <br><br>
+					<div id="matrixB" class="inline">
+						<div class="left"></div>
+						<div class="center"></div>
+						<div class="right"></div>
+						<div id="letterB">B</div>
+					</div> <br>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!------------matrixMachine------------>
+	<script src="../js/newFunc.js"></script>
+</html>
